@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Léa Pollet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+  <!-- Ajout de Font Awesome pour les icônes -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto text-center relative">        
+            <!-- Photo en rond -->
+            <img 
+                src="https://media.licdn.com/dms/image/v2/C5603AQF3OHTahEwq-A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1643113321722?e=1736985600&v=beta&t=OyTDcX9hyou32lnlHsBv3Io2K0KMH84AzvWeGa_1VxA" 
+                alt="Photo de Léa" 
+                class="w-24 h-24 mx-auto rounded-full border-4 border-white shadow-lg"
+            >
+            <!-- Nom centré -->
+            <h1 class="text-4xl font-bold mt-4">Léa Pollet</h1>
+            <p class="text-gray-400 mt-2">Développeuse Freelance Frontend & Backend</p>
+        </div>
+    </header>
+    
+    <main class="container mx-auto mt-10">
+        <section id="projects" class="mt-12">
+            <h3 class="text-2xl font-semibold mb-4">Mes Projets</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Projet principal : Alphanexia TV -->
+                <a 
+                    href="https://alphanexia.fr/tv/" 
+                    target="_blank" 
+                    class="block group relative"
+                >
+                    <div class="bg-white shadow-md rounded-lg p-4 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                        <img 
+                            src="https://api.screenshotone.com/take?access_key=79VrSwfNoU9eKA&url=https%3A%2F%2Falphanexia.fr%2Ftv%2F&format=jpg&block_ads=true&block_cookie_banners=true&block_banners_by_heuristics=false&block_trackers=true&delay=0&timeout=60&response_type=by_format&image_quality=80" 
+                            alt="Aperçu du projet Alphanexia TV"
+                            class="rounded-lg mb-4 w-full h-40 object-cover"
+                        >
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-xl font-bold group-hover:text-blue-500 transition-colors">Alphanexia TV</h4>
+                            <div class="bg-red-500 text-white text-xs px-3 py-1 rounded-full">
+                                Projet Principal
+                            </div>
+                        </div>
+                        <p class="text-gray-600">
+                            Une page dynamique sous Wordpress intégrant un rafraîchissement automatique toutes les heures, avec des publicités et un lecteur Twitch responsive.
+                        </p>
+                    </div>
+                </a>
+                <!-- Projet React TV Show -->
+                <a 
+                    href="https://leap0p0.github.io/React_tv_show/" 
+                    target="_blank" 
+                    class="block group"
+                >
+                    <div 
+                    class="bg-white shadow-md rounded-lg p-4 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
+                    >
+                    <img 
+                        src="https://api.screenshotone.com/take?access_key=79VrSwfNoU9eKA&url=https%3A%2F%2Fleap0p0.github.io%2FReact_tv_show&format=jpg&block_ads=true&block_cookie_banners=true&block_banners_by_heuristics=false&block_trackers=true&delay=0&timeout=60&response_type=by_format&image_quality=80" 
+                        alt="Aperçu du projet React TV Show"
+                        class="rounded-lg mb-4 w-full h-40 object-cover"
+                    >
+                    <div class="flex items-center justify-between">
+                        <h4 class="text-xl font-bold group-hover:text-blue-500 transition-colors">React TV Show</h4>
+                        <div class="bg-red-500 text-white text-xs px-3 py-1 rounded-full">
+                        Projet Personnel
+                        </div>
+                    </div>
+                    <p class="text-gray-600">Un projet React qui affiche des séries TV grâce à l'API The Movie Database.</p>
+                    </div>
+                </a>
+                <!-- Projet Landing Page -->
+                <a
+                href="https://jechangeladonne.medecinsdumonde.org/" 
+                target="_blank" 
+                class="block group relative"
+            >
+                <div class="bg-white shadow-md rounded-lg p-4 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                    <img 
+                        src="https://api.screenshotone.com/take?access_key=79VrSwfNoU9eKA&url=https%3A%2F%2Fjechangeladonne.medecinsdumonde.org&format=jpg&block_ads=true&block_cookie_banners=true&block_banners_by_heuristics=false&block_trackers=true&delay=0&timeout=60&response_type=by_format&image_quality=80" 
+                        alt="Aperçu du projet Landing Page"
+                        class="rounded-lg mb-4 w-full h-40 object-cover"
+                    >
+                    <h4 class="text-xl font-bold group-hover:text-blue-500 transition-colors">Landing Page - Medecins du Monde</h4>
+                    <p class="text-gray-600">
+                        Une landing page dédiée à la collecte de fonds pour une cause humanitaire, intégrant un formulaire de don et des informations clés pour les utilisateurs.
+                    </p>
+                </div>
+            </a>
+            <!-- Projet Email Médecins du Monde -->
+            <a 
+            href="mail.html" 
+            target="_blank" 
+            class="block group relative"
+            >
+            <div class="bg-white shadow-md rounded-lg p-4 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                <img 
+                    src="https://api.screenshotone.com/take?access_key=79VrSwfNoU9eKA&url=chemin/vers/email.html&format=jpg&block_ads=true&block_cookie_banners=true&block_banners_by_heuristics=false&block_trackers=true&delay=0&timeout=60&response_type=by_format&image_quality=80" 
+                    alt="Aperçu du projet Email Médecins du Monde"
+                    class="rounded-lg mb-4 w-full h-40 object-cover"
+                >
+                <h4 class="text-xl font-bold group-hover:text-blue-500 transition-colors">Email Médecins du Monde</h4>
+                <p class="text-gray-600">
+                    Un projet de mail responsive en MJML destiné à Médecins du Monde, intégrant des balises dynamiques comme pour personnaliser le contenu en fonction du destinataire.
+                </p>
+            </div>
+            </a>
+
+            </div>
+        </section>
+
+        <!-- Section de contact avec réseaux sociaux -->
+        <section id="contact" class="mt-12 mb-12">
+            <h3 class="text-2xl font-semibold mb-4">Me contacter</h3>
+            <div class="flex justify-center space-x-6">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/léa-pollet-0b32581a1/" target="_blank" class="text-blue-600 hover:text-blue-800">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/Leap0p0" target="_blank" class="text-gray-800 hover:text-gray-600">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <!-- Email -->
+                <a href="mailto:contactwebnovation9@gmail.com" class="text-gray-600 hover:text-gray-800">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>© 2024 Léa Pollet - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
