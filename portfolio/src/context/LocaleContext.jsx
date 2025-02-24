@@ -1,14 +1,13 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useContext, useState } from "react";
 import { IntlProvider } from "react-intl";
-import fr from "../locales/fr.json";
-import en from "../locales/en.json";
+import messagesFr from "../locales/fr.json";
+import messagesEn from "../locales/en.json";
 
 const LocaleContext = createContext();
 
-const messages = { fr, en };
-
-export function LocaleProvider({ children }) {
+export const LocaleProvider = ({ children }) => {
   const [locale, setLocale] = useState("fr");
+  const messages = locale === "fr" ? messagesFr : messagesEn;
 
   const switchLanguage = (lang) => {
     setLocale(lang);
@@ -16,13 +15,13 @@ export function LocaleProvider({ children }) {
 
   return (
     <LocaleContext.Provider value={{ locale, switchLanguage }}>
-      <IntlProvider locale={locale} messages={messages[locale]}>
+      <IntlProvider locale={locale} messages={messages}>
         {children}
       </IntlProvider>
     </LocaleContext.Provider>
   );
-}
+};
 
-export function useLocale() {
+export const useLocale = () => {
   return useContext(LocaleContext);
-}
+};

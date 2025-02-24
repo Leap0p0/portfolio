@@ -2,7 +2,14 @@
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sora: ["Sora", "sans-serif"],
+      },
+      invert: {
+        100: "100%",
+      },
+    },
   },
   plugins: [],
 };
