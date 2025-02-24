@@ -3,13 +3,15 @@ import javascriptIcon from "../img/icon-javscript.svg";
 
 const skills = [
   { name: "Git", icon: "/icons/git.svg" },
-  { name: "Javascript", icon: javascriptIcon },
-  { name: "Sass/Scss", icon: "/icons/sass.svg" },
+  { name: "React", icon: "/icons/sass.svg" },
   { name: "Nest.Js", icon: "/icons/nestjs.svg" },
-  { name: "Storybook", icon: "/icons/storybook.svg" },
-  { name: "Socket.io", icon: "/icons/socketio.svg" },
-  { name: "Storybook", icon: "/icons/storybook.svg" },
-  { name: "Socket.io", icon: "/icons/socketio.svg" },
+  { name: "Javascript", icon: javascriptIcon },
+  { name: "Tailwinds", icon: "/icons/storybook.svg" },
+  { name: "HTML / CSS", icon: "/icons/socketio.svg" },
+  { name: "CMS", icon: "/icons/storybook.svg" },
+  { name: "Bootstrap", icon: "/icons/socketio.svg" },
+  { name: "NodeJS", icon: "/icons/socketio.svg" },
+  { name: "PHP", icon: "/icons/socketio.svg" },
 ];
 
 export default function SkillsGrid() {
