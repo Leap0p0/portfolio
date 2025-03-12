@@ -13,7 +13,7 @@ const handleAnimationComplete = () => {
 
 export default function HeroSection() {
     return (
-      <section className="flex flex-col md:flex-row items-center justify-center gap-x-10 px-10 py-20">
+        <section className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-x-10 px-10 py-20">
         <div className="md:w-1/2 text-left">
             <h1 className="font-sora text-4xl font-light">
                 <FormattedMessage id="hello" />
@@ -38,8 +38,7 @@ export default function HeroSection() {
                 Based In <span className="font-bold">France.</span>
             </h3>
             <p className="text-gray-600 mt-4">
-                I'm Flora Sheen. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Développeuse et intégratrice web avec 5 ans d’expérience, j’accompagne entreprises et entrepreneurs dans la création, l’optimisation et la maintenance de leurs outils numériques. Spécialisée en développement web, support technique et transformation digitale, je conçois des solutions modernes adaptées à vos besoins.
             </p>
   
             {/* Réseaux sociaux */}
