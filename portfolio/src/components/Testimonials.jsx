@@ -2,30 +2,27 @@ import React, { useState } from "react";
 import BlurText from "./../Utils/BlurText";
 import codeurImage from "./../img/rlcyvis1h95zhkvdw33b5w5q5bve.webp";
 import StarIcon from "./../img/Vector.svg";
+import { useIntl } from "react-intl";
 
 const testimonials = [
   {
     name: "la4a9270b",
-    role: "Codeur.com",
     image: codeurImage,
-    text: "Léa est très à l’écoute et professionnelle. Vous pouvez lui faire confiance les yeux fermés ! Merci Léa",
+    textId: "testimonial1_text",
   },
   {
     name: "ef49f1964",
-    role: "Codeur.com",
     image: codeurImage,
-    text: "Excellent travail, Léa a su s'adapter très vite à mes demandes et a su rester disponible tout au long, je la recommande !",
+    textId: "testimonial2_text",
   },
   {
     name: "x40a77b3c",
-    role: "Codeur.com",
     image: codeurImage,
-    text: "Très réactive et à l'écoute des besoins. A recommander",
+    textId: "testimonial3_text",
   },
-  
 ];
 
-const TestimonialCard = ({ testimonial, isActive }) => {
+const TestimonialCard = ({ testimonial, isActive, role, text }) => {
   return (
     <div
       className={`p-6 rounded-2xl transition-all shadow-lg h-full flex flex-col justify-between ${
@@ -43,22 +40,23 @@ const TestimonialCard = ({ testimonial, isActive }) => {
             "
           </div>
         </div>
-        <p className="mb-4 text-sm min-h-20">{testimonial.text}</p>
+        <p className="mb-4 text-sm min-h-20">{text}</p>
         <hr className="w-12 border-t border-gray-300 my-2" />
         <h3 className="font-bold">{testimonial.name}</h3>
-        <p className="text-gray-500 text-sm">{testimonial.role}</p>
+        <p className="text-gray-500 text-sm">{role}</p>
       </div>
     </div>
   );
 };
 
 const Testimonials = () => {
+  const { formatMessage } = useIntl();
   const [activeIndex, setActiveIndex] = useState(1);
 
   return (
     <div className="text-center py-10">
       <BlurText
-        text="My Testimonial"
+        text={formatMessage({ id: "MyTestimonial" })}
         delay={150}
         animateBy="words"
         direction="top"
@@ -74,6 +72,8 @@ const Testimonials = () => {
             <TestimonialCard
               testimonial={testimonial}
               isActive={index === activeIndex}
+              role={formatMessage({ id: "testimonial_role" })}
+              text={formatMessage({ id: testimonial.textId })}
             />
           </div>
         ))}
@@ -83,10 +83,10 @@ const Testimonials = () => {
         className="inline-flex items-center gap-2 mt-4 transition text-black"
         target="_blank"
         rel="noopener noreferrer"
-        >
-            <img src={StarIcon} alt="Voir plus d'avis" className="w-6 h-6" />
-            <span className="font-medium">Voir plus d'avis</span>
-        </a>
+      >
+        <img src={StarIcon} alt={formatMessage({ id: "view_more_reviews" })} className="w-6 h-6" />
+        <span className="font-medium">{formatMessage({ id: "view_more_reviews" })}</span>
+      </a>
     </div>
   );
 };

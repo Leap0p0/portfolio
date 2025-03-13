@@ -10,6 +10,8 @@ import bootstrapIcon from "../img/bootstrap-fill-svgrepo-com.svg"
 import nodejsIcon from "../img/nodejs-svgrepo-com.svg"
 import phpIcon from "../img/php01-svgrepo-com.svg"
 import BlurText from "../Utils/BlurText";
+import { useIntl } from "react-intl";
+
 
 const skills = [
   { name: "Git", icon: GitIcon },
@@ -26,15 +28,15 @@ const skills = [
 
 export default function SkillsGrid() {
   const [hoveredSkill, setHoveredSkill] = useState(null);
-
+  const { formatMessage } = useIntl();
   return (
     <section className="text-center my-16 pt-0">
         <BlurText
-                text="My Skills"
-                delay={150}
-                animateBy="words"
-                direction="top"
-                className="text-4xl font-bold text-black text-center mb-12 flex justify-center"
+            text={formatMessage({ id: "MySkills" })}
+            delay={150}
+            animateBy="words"
+            direction="top"
+            className="text-4xl font-bold text-black text-center mb-12 flex justify-center"
         />
       <div className="grid grid-cols-2 md:grid-cols-5 gap-12 max-w-6xl mx-auto">
         {skills.map((skill, index) => (

@@ -1,5 +1,6 @@
 import React from "react";
 import Particles from "./../Utils/Particles";
+import BlurText from "../Utils/BlurText";
 
 const ContactForm = () => {
   return (
@@ -19,6 +20,13 @@ const ContactForm = () => {
       </div>
       
       <div className="relative z-10 w-full max-w-4xl bg-opacity-50 backdrop-blur-md p-8 rounded-lg">
+        <BlurText
+                text="Contact Me"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                className="text-4xl font-bold text-center mb-12 flex justify-center"
+            />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Form */}
           <form className="space-y-4">
@@ -34,8 +42,8 @@ const ContactForm = () => {
             <h2 className="text-3xl font-bold">Let's <span className="bg-white text-black px-2">talk</span> for</h2>
             <h3 className="text-4xl font-bold">Something special</h3>
             <p className="text-gray-300 mt-4">I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
-            <p className="mt-6 font-bold">Youremail@gmail.com</p>
-            <p className="font-bold">1234567890</p>
+            <p className="mt-6 font-bold">contactwebnovation9@gmail.com</p>
+            <p className="font-bold">0770039639</p>
           </div>
         </div>
       </div>

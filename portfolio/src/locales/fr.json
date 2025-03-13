@@ -1,6 +1,33 @@
 {
-    "edit_text": "Modifiez {code} et sauvegardez pour recharger.",
-    "learn_react": "Apprendre React",
-    "hello": "Bonjour, je suis "
-  }
-  
+  "edit_text": "Modifiez {code} et sauvegardez pour recharger.",
+  "learn_react": "Apprendre React",
+  "hello": "Bonjour, je suis ",
+  "frontend_developer": "Développeuse <highlight>frontend</highlight>",
+  "based_in": "Basée en {location}.",
+  "description": "Développeuse et intégratrice web avec 5 ans d’expérience, j’accompagne entreprises et entrepreneurs dans la création, l’optimisation et la maintenance de leurs outils numériques. Spécialisée en développement web, support technique et transformation digitale, je conçois des solutions modernes adaptées à vos besoins.",
+  "MySkills": "Mes Compétences",
+  "MyProjects": "Mes Projets",
+  "Mytestimonial": "Les Avis",
+  "Mycontact": "Me Contacter",
+  "FireSafety": "Fire & Safety",
+  "FireSafetyDesc": "Site vitrine développé sous WordPress avec intégration d'un thème personnalisé et d'un formulaire de contact.",
+  "TrikerCollecte": "Trik3r-Collecte",
+  "TrikerCollecteDesc": "Développement d'un site dynamique responsive avec React, NestJS et Tailwind CSS. Les technologies utilisées incluent des API et Docker pour la gestion des conteneurs.",
+  "MyleneDigital": "Mylene Digital",
+  "MyleneDigitalDesc": "Site développé sous WordPress avec intégration complète du responsive, d'un thème personnalisé et d'un formulaire de contact.",
+  "CrecheCookieKids": "Creche Cookie Kids",
+  "CrecheCookieKidsDesc": "Site développé sous HTML/CSS/JS avec utilisation de Mulscroll JS, de BX Slider pour le carrousel et d'un formulaire de contact.",
+  "FrancMuller": "Franc Muller - Avocat du travail",
+  "FrancMullerDesc": "Site développé sous WordPress avec intégration d'un thème personnalisé, d'un blog et d'un formulaire de contact.",
+  "AlphanexiaTV": "Alphanexia TV",
+  "AlphanexiaTVDesc": "Une page dynamique sous Wordpress intégrant un rafraîchissement automatique toutes les heures, avec des publicités et un lecteur Twitch responsive.",
+  "LandingPageMDM": "Landing Page - Médecins du Monde",
+  "LandingPageMDMDesc": "Une landing page dédiée à la collecte de fonds pour une cause humanitaire, intégrant un formulaire de don et des informations clés pour les utilisateurs.",
+  "NewsletterMDM": "Newsletter Médecins du Monde",
+  "NewsletterMDMDesc": "Un projet de mail responsive en MJML destiné à Médecins du Monde, intégrant des balises dynamiques pour personnaliser le contenu en fonction du destinataire.",
+  "testimonial1_text": "Léa est très à l’écoute et professionnelle. Vous pouvez lui faire confiance les yeux fermés ! Merci Léa",
+  "testimonial2_text": "Excellent travail, Léa a su s'adapter très vite à mes demandes et a su rester disponible tout au long, je la recommande !",
+  "testimonial3_text": "Très réactive et à l'écoute des besoins. A recommander",
+  "testimonial_role": "Codeur.com",
+  "view_more_reviews": "Voir plus d'avis"
+}

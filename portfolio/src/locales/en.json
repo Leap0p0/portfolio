@@ -1,6 +1,33 @@
 {
-    "edit_text": "Edit {code} and save to reload.",
-    "learn_react": "Learn React",
-    "hello": "Hello, I’m "
-  }
-  
+  "edit_text": "Edit {code} and save to reload.",
+  "learn_react": "Learn React",
+  "hello": "Hello, I am ",
+  "frontend_developer": "Frontend <highlight>Developer</highlight>",
+  "based_in": "Based in {location}.",
+  "description": "Web developer and integrator with 5 years of experience, I help companies and entrepreneurs create, optimize, and maintain their digital tools. Specializing in web development, technical support, and digital transformation, I design modern solutions tailored to your needs.",
+  "MySkills": "My Skills",
+  "MyProjects": "My Projects",
+  "Mytestimonial": "My Testimonial",
+  "Mycontact": "Contact Me",
+  "FireSafety": "Fire & Safety",
+  "FireSafetyDesc": "Showcase website developed with WordPress, integrating a custom theme and a contact form.",
+  "TrikerCollecte": "Trik3r-Collecte",
+  "TrikerCollecteDesc": "Development of a responsive dynamic website with React, NestJS, and Tailwind CSS. Technologies used include APIs and Docker for container management.",
+  "MyleneDigital": "Mylene Digital",
+  "MyleneDigitalDesc": "Website developed with WordPress, featuring full responsiveness, a custom theme, and a contact form.",
+  "CrecheCookieKids": "Creche Cookie Kids",
+  "CrecheCookieKidsDesc": "Website developed using HTML/CSS/JS, incorporating Mulscroll JS, BX Slider for the carousel, and a contact form.",
+  "FrancMuller": "Franc Muller - Labor Lawyer",
+  "FrancMullerDesc": "Website developed with WordPress, featuring a custom theme, a blog, and a contact form.",
+  "AlphanexiaTV": "Alphanexia TV",
+  "AlphanexiaTVDesc": "A dynamic page under WordPress, integrating automatic hourly refresh, advertisements, and a responsive Twitch player.",
+  "LandingPageMDM": "Landing Page - Médecins du Monde",
+  "LandingPageMDMDesc": "A landing page dedicated to fundraising for a humanitarian cause, integrating a donation form and key information for users.",
+  "NewsletterMDM": "Newsletter Médecins du Monde",
+  "NewsletterMDMDesc": "A responsive email project in MJML for Médecins du Monde, integrating dynamic tags to personalize content based on the recipient.",
+  "testimonial1_text": "Léa is very attentive and professional. You can trust her without hesitation! Thank you, Léa.",
+  "testimonial2_text": "Excellent work, Léa quickly adapted to my requests and remained available throughout, I highly recommend her!",
+  "testimonial3_text": "Very responsive and attentive to needs. Highly recommend.",
+  "testimonial_role": "Codeur.com",
+  "view_more_reviews": "See more reviews"
+}
