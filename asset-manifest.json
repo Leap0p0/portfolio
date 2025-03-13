@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8c0b6d27.css",
+    "main.js": "/portfolio/static/js/main.74e7ae08.js",
+    "static/media/image copy.png": "/portfolio/static/media/image copy.8e39af24a8ac4c906e51.png",
+    "static/media/image copy 2.png": "/portfolio/static/media/image copy 2.097592e54333cbfef500.png",
+    "static/media/image.png": "/portfolio/static/media/image.9561009497f3c7156553.png",
+    "static/media/image copy 3.png": "/portfolio/static/media/image copy 3.85f0cdb9eaf0934d36b5.png",
+    "static/media/Capture d’écran 2025-03-01 à 18-compressed.jpg": "/portfolio/static/media/Capture d’écran 2025-03-01 à 18-compressed.8080777a7397b3d12bef.jpg",
+    "static/media/s0fj94przed8fvz7amsplwwb7aqk.png": "/portfolio/static/media/s0fj94przed8fvz7amsplwwb7aqk.616039dc57bf6f4458ea.png",
+    "static/media/Capture d’écran 2025-03-01 à 18-compressed-2.jpg": "/portfolio/static/media/Capture d’écran 2025-03-01 à 18-compressed-2.5e0b88240426e62b4cab.jpg",
+    "static/media/alphanexia.jpg": "/portfolio/static/media/alphanexia.6adc956b6d7904f5c4e9.jpg",
+    "static/media/Octicons-mark-github.svg.png": "/portfolio/static/media/Octicons-mark-github.svg.8e333dd8e010e2f472b9.png",
+    "static/media/girl banner 1.svg": "/portfolio/static/media/girl banner 1.0252a1c14cba22b0aba104aca3569695.svg",
+    "static/media/nestjs-svgrepo-com.svg": "/portfolio/static/media/nestjs-svgrepo-com.60281448ad2fdaff9d8c07e8d390262a.svg",
+    "static/media/logo-react-svgrepo-com.svg": "/portfolio/static/media/logo-react-svgrepo-com.749afd9dc7fdedaacf45f1f4b44f545c.svg",
+    "static/media/rlcyvis1h95zhkvdw33b5w5q5bve.webp": "/portfolio/static/media/rlcyvis1h95zhkvdw33b5w5q5bve.1cca2c45da31cb147fb4.webp",
+    "static/media/wordpress-139-svgrepo-com.svg": "/portfolio/static/media/wordpress-139-svgrepo-com.a7d0da79bcb81d62d5b02fa713748ff3.svg",
+    "static/media/php01-svgrepo-com.svg": "/portfolio/static/media/php01-svgrepo-com.c72472c53c42fd026a594d40edbf3dc0.svg",
+    "static/media/Social icon.svg": "/portfolio/static/media/Social icon.2769fa07a6b7caf130245ce0e7a4a9da.svg",
+    "static/media/bootstrap-fill-svgrepo-com.svg": "/portfolio/static/media/bootstrap-fill-svgrepo-com.cb39a4defc2b77e48922d98634590e12.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.9430eead23e3f8b4213e56e0a46ba94d.svg",
+    "static/media/Social icon-2.svg": "/portfolio/static/media/Social icon-2.b088c5a5f640122c448e544b291fbf27.svg",
+    "static/media/icon-javscript.svg": "/portfolio/static/media/icon-javscript.6a25c1b4ac0894113fd367d0e48750c8.svg",
+    "static/media/html5-02-svgrepo-com.svg": "/portfolio/static/media/html5-02-svgrepo-com.8864b1cb21c6fb0d6a0688c8e99ee57f.svg",
+    "static/media/nodejs-svgrepo-com.svg": "/portfolio/static/media/nodejs-svgrepo-com.26622c84dd044090ed47e74c83daba04.svg",
+    "static/media/git.svg": "/portfolio/static/media/git.53474401b92b10a2c44571348999e714.svg",
+    "static/media/tailwind-css-svgrepo-com.svg": "/portfolio/static/media/tailwind-css-svgrepo-com.78c92cee54f7e897c18b939b258e181c.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/export.svg": "/portfolio/static/media/export.1cd3cc303f71ffcc8697ee43a8c18a28.svg",
+    "static/media/Vector.svg": "/portfolio/static/media/Vector.3722983ea97746d2d7f9ecb5b31a0435.svg",
+    "main.8c0b6d27.css.map": "/portfolio/static/css/main.8c0b6d27.css.map",
+    "main.74e7ae08.js.map": "/portfolio/static/js/main.74e7ae08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c0b6d27.css",
+    "static/js/main.74e7ae08.js"
+  ]
+}
