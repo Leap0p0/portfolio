@@ -1,0 +1,4 @@
+- name: Build project
+  run: |
+    echo "VITE_BREVO_API_KEY=${{ secrets.VITE_BREVO_API_KEY }}" > .env
+    npm run build
