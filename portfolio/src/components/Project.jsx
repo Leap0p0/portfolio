@@ -1,8 +1,8 @@
 import React from "react";
 import TiltedCard from "./../Utils/TiltedCard";
 import FireImage from "./../img/s0fj94przed8fvz7amsplwwb7aqk.png";
-import TrikerImage from "./../img/Capture d’écran 2025-03-01 à 18-compressed-2.jpg";
-import AvocatImage from "./../img/Capture d’écran 2025-03-01 à 18-compressed.jpg";
+import TrikerImage from "./../img/Capture d’écran 2025-03-01 à 18-compressed-2.jpg";
+import AvocatImage from "./../img/Capture d’écran 2025-03-01 à 18-compressed.jpg";
 import MyleneImage from "./../img/image.png";
 import BlurText from "../Utils/BlurText";
 import AlphaNexiaImage from "./../img/alphanexia.jpg";
@@ -11,6 +11,7 @@ import MdmMailImage from "./../img/image copy 2.png";
 import ViewProjectIcon from "./../img/export.svg";
 import crecheImage from "./../img/image copy 3.png";
 import { useIntl } from "react-intl";
+import { motion } from "framer-motion"; // Importer motion pour l'animation
 
 const projects = [
   {
@@ -71,20 +72,27 @@ const projects = [
   },
 ];
 
-
 export default function Projects() {
   const { formatMessage } = useIntl();
   return (
     <section className="bg-black text-white py-16">
-        <div className="max-w-6xl mx-auto">
-            <BlurText
-                text={formatMessage({ id: "MyProjects" })}
-                delay={150}
-                animateBy="words"
-                direction="top"
-                className="text-4xl font-bold text-center mb-12 flex justify-center"
-            />
-        <div className="space-y-16">
+      <div className="max-w-6xl mx-auto">
+        <BlurText
+          text={formatMessage({ id: "MyProjects" })}
+          delay={150}
+          animateBy="words"
+          direction="top"
+          className="text-4xl font-bold text-center mb-12 flex justify-center"
+        />
+
+        {/* Appliquer l'animation ici pour faire apparaître la section */}
+        <motion.div
+          id="project-slide"
+          className="space-y-16"
+          initial={{ opacity: 0, y: -100 }} // Etat initial
+          animate={{ opacity: 1, y: 0 }} // Etat final
+          transition={{ duration: 0.8 }} // Durée de l'animation
+        >
           {projects.map((project, index) => (
             <div
               key={project.id}
@@ -96,7 +104,7 @@ export default function Projects() {
               <div className="w-full md:w-1/2">
                 <TiltedCard
                   imageSrc={project.image}
-                  altText="{project.title}"
+                  altText={project.title}
                   captionText={project.title}
                   containerHeight="300px"
                   containerWidth="100%"
@@ -107,14 +115,13 @@ export default function Projects() {
                   showMobileWarning={false}
                   showTooltip={true}
                   displayOverlayContent={true}
-                  
                 />
               </div>
 
               {/* Texte du projet */}
-                <div className="w-full md:w-1/2 text-left">
+              <div className="w-full md:w-1/2 text-left">
                 <span className="text-5xl font-bold text-gray-500 block">
-                    {String(project.id).padStart(2, "0")}
+                  {String(project.id).padStart(2, "0")}
                 </span>
                 <h3 className="text-2xl font-bold mt-2">
                   {formatMessage({ id: project.title })}
@@ -124,19 +131,18 @@ export default function Projects() {
                 </p>
 
                 <a
-                    href={project.link}
-                    className="inline-flex items-center gap-2 mt-4 transition text-white"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  href={project.link}
+                  className="inline-flex items-center gap-2 mt-4 transition text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                    <img src={ViewProjectIcon} alt="Voir le projet" className="w-6 h-6" />
-                    <span className="font-medium">Voir le projet</span>
+                  <img src={ViewProjectIcon} alt="Voir le projet" className="w-6 h-6" />
+                  <span className="font-medium">Voir le projet</span>
                 </a>
-                </div>
-
+              </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
