@@ -1,25 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import TiltedCard from "./../Utils/TiltedCard";
 import FireImage from "./../img/s0fj94przed8fvz7amsplwwb7aqk.png";
 import TrikerImage from "./../img/Capture d’écran 2025-03-01 à 18-compressed-2.jpg";
 import AvocatImage from "./../img/Capture d’écran 2025-03-01 à 18-compressed.jpg";
 import MyleneImage from "./../img/image.png";
 import BlurText from "../Utils/BlurText";
+import SmartkidsImage from "./../img/smartkids.png";
 import AlphaNexiaImage from "./../img/alphanexia.jpg";
 import MdmImage from "./../img/image copy.png";
+import VanillyaImage from "./../img/vanillya.png";
+import BSLYKImage from "./../img/bslyk.png";
 import MdmMailImage from "./../img/image copy 2.png";
+import MypatchImage from "./../img/my-patch.fr.png";
 import ViewProjectIcon from "./../img/export.svg";
 import crecheImage from "./../img/image copy 3.png";
 import { useIntl } from "react-intl";
-import { motion } from "framer-motion"; // Importer motion pour l'animation
+import { motion } from "framer-motion";
 
-const projects = [
+const allProjects = [
   {
     id: 1,
     title: "FireSafety",
     description: "FireSafetyDesc",
     image: FireImage,
     link: "https://fire-safety.org",
+    category: "WordPress",
   },
   {
     id: 2,
@@ -27,6 +32,7 @@ const projects = [
     description: "TrikerCollecteDesc",
     image: TrikerImage,
     link: "https://www.trik3r-collecte.fr",
+    category: "Code",
   },
   {
     id: 3,
@@ -34,6 +40,7 @@ const projects = [
     description: "MyleneDigitalDesc",
     image: MyleneImage,
     link: "https://www.mylene-digital.fr",
+    category: "WordPress",
   },
   {
     id: 4,
@@ -41,6 +48,7 @@ const projects = [
     description: "CrecheCookieKidsDesc",
     image: crecheImage,
     link: "http://www.creche-cookiekids.lu",
+    category: "Code",
   },
   {
     id: 5,
@@ -48,6 +56,7 @@ const projects = [
     description: "FrancMullerDesc",
     image: AvocatImage,
     link: "https://www.francmuller-avocat.com",
+    category: "WordPress",
   },
   {
     id: 6,
@@ -55,6 +64,7 @@ const projects = [
     description: "AlphanexiaTVDesc",
     image: AlphaNexiaImage,
     link: "https://alphanexia.fr/tv/",
+    category: "WordPress",
   },
   {
     id: 7,
@@ -62,6 +72,7 @@ const projects = [
     description: "LandingPageMDMDesc",
     image: MdmImage,
     link: "https://jechangeladonne.medecinsdumonde.org/",
+    category: "Code",
   },
   {
     id: 8,
@@ -69,11 +80,53 @@ const projects = [
     description: "NewsletterMDMDesc",
     image: MdmMailImage,
     link: "https://alphanexia.fr/tv/",
+    category: "Code",
+  },
+  {
+    id: 9,
+    title: "Mypatch",
+    description: "MypatchDesc",
+    image: MypatchImage,
+    link: "https://my-patch.fr",
+    category: "Shopify",
+  },
+  {
+    id: 10,
+    title: "Vanillya",
+    description: "VanillyaDesc",
+    image: VanillyaImage,
+    link: "https://vanillya.co",
+    category: "Shopify",
+  },
+  {
+    id: 11,
+    title: "BSLYK",
+    description: "BSLYKDesc",
+    image: BSLYKImage,
+    link: "https://bslyk.fr",
+    category: "WordPress",
+  },
+  {
+    id: 12,
+    title: "Smartkids",
+    description: "SmartkidsDesc",
+    image: SmartkidsImage,
+    link: "https://smartkidsapp.com",
+    category: "Code",
   },
 ];
 
+const categories = ["All", "WordPress", "Shopify", "Code"];
+
 export default function Projects() {
   const { formatMessage } = useIntl();
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const filteredProjects =
+    selectedCategory === "All"
+      ? allProjects
+      : allProjects.filter((project) => project.category === selectedCategory);
+
   return (
     <section className="bg-black text-white py-16">
       <div className="max-w-6xl mx-auto">
@@ -85,22 +138,39 @@ export default function Projects() {
           className="text-4xl font-bold text-center mb-12 flex justify-center"
         />
 
-        {/* Appliquer l'animation ici pour faire apparaître la section */}
+        {/* Filtres de catégories */}
+        <div className="flex justify-center flex-wrap gap-4 mb-12">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setSelectedCategory(cat)}
+              className={`px-4 py-2 rounded-full border ${
+                selectedCategory === cat
+                  ? "bg-white text-black"
+                  : "border-white text-white hover:bg-white hover:text-black"
+              } transition`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        {/* Liste des projets animée */}
         <motion.div
           id="project-slide"
           className="space-y-16"
-          initial={{ opacity: 0, y: -100 }} // Etat initial
-          animate={{ opacity: 1, y: 0 }} // Etat final
-          transition={{ duration: 0.8 }} // Durée de l'animation
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
         >
-          {projects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <div
               key={project.id}
               className={`flex flex-col md:flex-row items-center ${
                 index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               } gap-10`}
             >
-              {/* Utilisation de TiltedCard */}
+              {/* Image */}
               <div className="w-full md:w-1/2">
                 <TiltedCard
                   imageSrc={project.image}
@@ -118,7 +188,7 @@ export default function Projects() {
                 />
               </div>
 
-              {/* Texte du projet */}
+              {/* Texte */}
               <div className="w-full md:w-1/2 text-left">
                 <span className="text-5xl font-bold text-gray-500 block">
                   {String(project.id).padStart(2, "0")}

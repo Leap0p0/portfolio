@@ -28,9 +28,7 @@ export default function Navbar() {
     <nav
       className="fixed top-0 left-0 right-0 z-50 p-4 transition-all duration-300"
       style={{
-        opacity: 1 - transparency, // La transparence augmente à mesure que l'utilisateur fait défiler la page
-        transition: "opacity 0.3s", // Transition douce pour la transparence
-        backgroundColor: scrollY > 50 ? "rgba(255, 255, 255, 0.9)" : "rgba(255, 255, 255, 1)", // Si l'utilisateur défile, fond noir transparent
+        backgroundColor: "rgba(255, 255, 255, 1)", // Si l'utilisateur défile, fond noir transparent
       }}
     >
       <div className="container mx-auto flex justify-between items-center relative">
