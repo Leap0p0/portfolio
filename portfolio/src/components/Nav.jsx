@@ -34,13 +34,13 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center relative">
         {/* Menu centré */}
         <div className="absolute left-1/2 transform -translate-x-1/2 flex space-x-6">
-          <Link to="skills-slide" smooth={true} duration={500} className="text-lg font-medium hover:text-gray-400">
+          <Link to="skills-slide" smooth={true} duration={500} className="text-lg font-medium hover:text-gray-400 cursor-pointer">
             {formatMessage({ id: "skills" })}
           </Link>
-          <Link to="project-slide" smooth={true} duration={500} className="text-lg font-medium hover:text-gray-400">
+          <Link to="project-slide" smooth={true} duration={500} className="text-lg font-medium hover:text-gray-400 cursor-pointer">
             {formatMessage({ id: "projects" })}
           </Link>
-          <Link to="contact-form" smooth={true} duration={500} className="text-lg font-medium hover:text-gray-400">
+          <Link to="contact-form" smooth={true} duration={500} className="text-lg font-medium hover:text-gray-400 cursor-pointer">
             {formatMessage({ id: "contact" })}
           </Link>
         </div>

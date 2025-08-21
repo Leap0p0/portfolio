@@ -1,12 +1,14 @@
 import React from "react";
 import Particles from "../Utils/Particles";
 import BlurText from "../Utils/BlurText";
+import { useIntl } from "react-intl";
 import { motion } from "framer-motion";
 import { InlineWidget } from "react-calendly";
 
 const CalendlyForm = () => {
+  const { formatMessage } = useIntl();
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center bg-black text-white p-8 overflow-hidden">
+    <div id="contact-form" className="relative w-full min-h-screen flex items-center justify-center bg-black text-white p-8 overflow-hidden">
       {/* Particles en fond */}
       <div className="absolute inset-0 z-0">
         <Particles
@@ -30,7 +32,7 @@ const CalendlyForm = () => {
         transition={{ duration: 0.8 }}
       >
         <BlurText
-          text="Plan a Meeting"
+          text={formatMessage({ id: "Mycontact" })}
           delay={150}
           animateBy="words"
           direction="top"

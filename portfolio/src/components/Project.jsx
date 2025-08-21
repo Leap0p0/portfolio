@@ -14,6 +14,9 @@ import MdmMailImage from "./../img/image copy 2.png";
 import MypatchImage from "./../img/my-patch.fr.png";
 import ViewProjectIcon from "./../img/export.svg";
 import crecheImage from "./../img/image copy 3.png";
+import TspImage from "./../img/tsp.webp"
+import SushiImage from "./../img/sushi.webp";
+import ThaiImage from "./../img/cotethai.webp";
 import { useIntl } from "react-intl";
 import { motion } from "framer-motion";
 
@@ -36,6 +39,22 @@ const allProjects = [
   },
   {
     id: 3,
+    title: "Tsp",
+    description: "TspDesc",
+    image: TspImage,
+    link: "https://www.tsp.pf/",
+    category: "WordPress",
+  },
+  {
+    id: 4,
+    title: "Sushi",
+    description: "SushiDesc",
+    image: SushiImage,
+    link: "https://www.sushi-marguerite-asie.fr/",
+    category: "WordPress",
+  },
+  {
+    id: 3,
     title: "MyleneDigital",
     description: "MyleneDigitalDesc",
     image: MyleneImage,
@@ -43,7 +62,7 @@ const allProjects = [
     category: "WordPress",
   },
   {
-    id: 4,
+    id: 5,
     title: "CrecheCookieKids",
     description: "CrecheCookieKidsDesc",
     image: crecheImage,
@@ -51,7 +70,7 @@ const allProjects = [
     category: "Code",
   },
   {
-    id: 5,
+    id: 6,
     title: "FrancMuller",
     description: "FrancMullerDesc",
     image: AvocatImage,
@@ -59,7 +78,7 @@ const allProjects = [
     category: "WordPress",
   },
   {
-    id: 6,
+    id: 7,
     title: "AlphanexiaTV",
     description: "AlphanexiaTVDesc",
     image: AlphaNexiaImage,
@@ -67,7 +86,7 @@ const allProjects = [
     category: "WordPress",
   },
   {
-    id: 7,
+    id: 8,
     title: "LandingPageMDM",
     description: "LandingPageMDMDesc",
     image: MdmImage,
@@ -75,7 +94,7 @@ const allProjects = [
     category: "Code",
   },
   {
-    id: 8,
+    id: 9,
     title: "NewsletterMDM",
     description: "NewsletterMDMDesc",
     image: MdmMailImage,
@@ -83,7 +102,7 @@ const allProjects = [
     category: "Code",
   },
   {
-    id: 9,
+    id: 10,
     title: "Mypatch",
     description: "MypatchDesc",
     image: MypatchImage,
@@ -91,7 +110,7 @@ const allProjects = [
     category: "Shopify",
   },
   {
-    id: 10,
+    id: 11,
     title: "Vanillya",
     description: "VanillyaDesc",
     image: VanillyaImage,
@@ -99,7 +118,7 @@ const allProjects = [
     category: "Shopify",
   },
   {
-    id: 11,
+    id: 12,
     title: "BSLYK",
     description: "BSLYKDesc",
     image: BSLYKImage,
@@ -107,12 +126,20 @@ const allProjects = [
     category: "WordPress",
   },
   {
-    id: 12,
+    id: 13,
     title: "Smartkids",
     description: "SmartkidsDesc",
     image: SmartkidsImage,
     link: "https://smartkidsapp.com",
     category: "Code",
+  },
+  {
+    id: 14,
+    title: "Thai",
+    description: "ThaiDesc",
+    image: ThaiImage,
+    link: "https://www.cote-thai.fr/",
+    category: "WordPress",
   },
 ];
 
@@ -128,7 +155,7 @@ export default function Projects() {
       : allProjects.filter((project) => project.category === selectedCategory);
 
   return (
-    <section className="bg-black text-white py-16">
+    <section id="project-slide" className="bg-black text-white py-16">
       <div className="max-w-6xl mx-auto">
         <BlurText
           text={formatMessage({ id: "MyProjects" })}
@@ -157,7 +184,7 @@ export default function Projects() {
 
         {/* Liste des projets animée */}
         <motion.div
-          id="project-slide"
+          
           className="space-y-16"
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}

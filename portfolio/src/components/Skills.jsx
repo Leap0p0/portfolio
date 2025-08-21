@@ -31,7 +31,7 @@ export default function SkillsGrid() {
   const { formatMessage } = useIntl();
 
   return (
-    <section className="text-center my-16 pt-0">
+    <section id="skills-slide" className="text-center my-16 pt-0">
       <BlurText
         text={formatMessage({ id: "MySkills" })}
         delay={150}
@@ -40,7 +40,7 @@ export default function SkillsGrid() {
         className="text-4xl font-bold text-black text-center mb-12 flex justify-center"
       />
       <motion.div
-        id="skills-slide"
+        
         className="grid grid-cols-2 md:grid-cols-5 gap-12 max-w-6xl mx-auto"
         initial={{ opacity: 0, y: -100 }} // Initial state
         animate={{ opacity: 1, y: 0 }} // Final state
