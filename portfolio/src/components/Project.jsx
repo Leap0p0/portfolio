@@ -39,14 +39,6 @@ const allProjects = [
   },
   {
     id: 3,
-    title: "Tsp",
-    description: "TspDesc",
-    image: TspImage,
-    link: "https://www.tsp.pf/",
-    category: "WordPress",
-  },
-  {
-    id: 4,
     title: "Sushi",
     description: "SushiDesc",
     image: SushiImage,
@@ -54,7 +46,7 @@ const allProjects = [
     category: "WordPress",
   },
   {
-    id: 3,
+    id: 4,
     title: "MyleneDigital",
     description: "MyleneDigitalDesc",
     image: MyleneImage,
