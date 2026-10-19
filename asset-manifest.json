@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1b574aed.css",
-    "main.js": "/portfolio/static/js/main.5521f273.js",
+    "main.js": "/portfolio/static/js/main.projects-f7470b4a59fa.js",
     "static/media/image copy.png": "/portfolio/static/media/image copy.8e39af24a8ac4c906e51.png",
     "static/media/image copy 2.png": "/portfolio/static/media/image copy 2.097592e54333cbfef500.png",
     "static/media/image.png": "/portfolio/static/media/image.9561009497f3c7156553.png",
@@ -37,10 +37,15 @@
     "static/media/export.svg": "/portfolio/static/media/export.1cd3cc303f71ffcc8697ee43a8c18a28.svg",
     "static/media/Vector.svg": "/portfolio/static/media/Vector.3722983ea97746d2d7f9ecb5b31a0435.svg",
     "main.1b574aed.css.map": "/portfolio/static/css/main.1b574aed.css.map",
-    "main.5521f273.js.map": "/portfolio/static/js/main.5521f273.js.map"
+    "static/media/projects/hdr-peinture.webp": "/portfolio/static/media/projects/hdr-peinture.webp",
+    "static/media/projects/optidress.webp": "/portfolio/static/media/projects/optidress.webp",
+    "static/media/projects/theatre-des-arts-vivants.webp": "/portfolio/static/media/projects/theatre-des-arts-vivants.webp",
+    "static/media/projects/lovely-colors.webp": "/portfolio/static/media/projects/lovely-colors.webp",
+    "static/media/projects/fidelygo.webp": "/portfolio/static/media/projects/fidelygo.webp",
+    "main.projects-f7470b4a59fa.js.map": "/portfolio/static/js/main.projects-f7470b4a59fa.js.map"
   },
   "entrypoints": [
     "static/css/main.1b574aed.css",
-    "static/js/main.5521f273.js"
+    "static/js/main.projects-f7470b4a59fa.js"
   ]
 }
