@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-project-updates",
+  "private": true,
+  "scripts": {
+    "update-projects": "node scripts/update-projects.cjs"
+  },
+  "devDependencies": {
+    "@babel/core": "7.26.10"
+  }
+}

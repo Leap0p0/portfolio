@@ -1,0 +1,55 @@
+[
+  {
+    "key": "HDRPeinture",
+    "title": "HDR Peinture",
+    "sector": "ARTISANAT & BÂTIMENT",
+    "description": "Site vitrine conçu pour valoriser le savoir-faire et générer des demandes de devis locales.",
+    "descriptionEn": "A showcase website designed to highlight craftsmanship and generate local quote requests.",
+    "link": "https://www.hdrpeinture.fr/",
+    "image": "hdr-peinture.webp",
+    "category": "WordPress",
+    "replaces": "AlphanexiaTV"
+  },
+  {
+    "key": "Optidress",
+    "title": "Optidress",
+    "sector": "SERVICE DIGITAL",
+    "description": "Intervention rapide pour ajuster le site aux besoins métier et améliorer l’expérience utilisateur.",
+    "descriptionEn": "Rapid updates to adapt the website to business needs and improve the user experience.",
+    "link": "https://optidress.fr/",
+    "image": "optidress.webp",
+    "category": "Code",
+    "replaces": "NewsletterMDM"
+  },
+  {
+    "key": "TheatreArtsVivants",
+    "title": "Théâtre des Arts Vivants",
+    "sector": "CULTURE & SPECTACLE VIVANT",
+    "description": "Site vitrine pour une ONG culturelle accréditée par l’UNESCO, mettant en avant ses projets, formations et coproductions artistiques.",
+    "descriptionEn": "A showcase website for a UNESCO-accredited cultural NGO, highlighting its projects, training programmes and artistic co-productions.",
+    "link": "https://www.theatredesartsvivants.com/",
+    "image": "theatre-des-arts-vivants.webp",
+    "category": "WordPress",
+    "replaces": "Mypatch"
+  },
+  {
+    "key": "LovelyColors",
+    "title": "Lovely Colors",
+    "sector": "E-COMMERCE CRÉATIF",
+    "description": "Boutique en ligne dédiée aux feutres acryliques, pensée pour mettre en valeur les couleurs et faciliter l’achat.",
+    "descriptionEn": "An online store dedicated to acrylic markers, designed to showcase colours and make shopping easy.",
+    "link": "https://lovelycolors.fr/",
+    "image": "lovely-colors.webp",
+    "category": "Shopify"
+  },
+  {
+    "key": "Fidelygo",
+    "title": "Fidelygo",
+    "sector": "APPLICATION FIDÉLITÉ",
+    "description": "Plateforme digitale claire et professionnelle pour présenter une solution de fidélisation.",
+    "descriptionEn": "A clear, professional digital platform presenting a customer loyalty solution.",
+    "link": "https://fidelygo.fr/",
+    "image": "fidelygo.webp",
+    "category": "Code"
+  }
+]
