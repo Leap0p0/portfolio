@@ -28,7 +28,7 @@ function property(node, name) {
 function newProject(p) {
   return t.valueToNode({
     id: 0, title: p.key, description: p.key + 'Desc',
-    image: '/portfolio/static/media/projects/' + p.image,
+    image: './static/media/projects/' + p.image,
     link: p.link, category: p.category, sector: p.sector,
   });
 }
@@ -37,6 +37,11 @@ const result = babel.transformSync(originalCode, {
   sourceMaps: true,
   inputSourceMap: JSON.parse(fs.readFileSync(inputPath + '.map', 'utf8')),
   plugins: [function () { return {visitor: {
+    AssignmentExpression(p) {
+      if (t.isMemberExpression(p.node.left) && p.node.left.property.name === 'p' && t.isStringLiteral(p.node.right, {value: '/portfolio/'})) {
+        p.node.right = t.stringLiteral('./');
+      }
+    },
     ArrayExpression(p) {
       if (!p.node.elements.some(e => t.isObjectExpression(e) && property(e, 'title')?.value.value === 'FireSafety')) return;
       arrays++;
@@ -110,19 +115,20 @@ fs.writeFileSync(path.join(root, 'static/js', output), result.code + `\n//# sour
 fs.writeFileSync(path.join(root, 'static/js', output + '.map'), JSON.stringify(result.map));
 const indexPath = path.join(root, 'index.html');
 const html = fs.readFileSync(indexPath, 'utf8');
-const updated = html.replace(/static\/js\/main\.[^"<>]+\.js(?=")/, 'static/js/' + output);
+const updated = html.replace(/static\/js\/main\.[^"<>]+\.js(?=")/, 'static/js/' + output).replaceAll('="/portfolio/', '="./');
 if (updated === html && !html.includes(output)) throw new Error('Script reference not found');
 fs.writeFileSync(indexPath, updated);
 const manifestPath = path.join(root, 'asset-manifest.json');
 const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
-manifest.files['main.js'] = '/portfolio/static/js/' + output;
+for (const key of Object.keys(manifest.files)) manifest.files[key] = manifest.files[key].replace(/^\/portfolio\//, './');
+manifest.files['main.js'] = './static/js/' + output;
 for (const key of Object.keys(manifest.files)) if (/^main\..*\.js\.map$/.test(key)) delete manifest.files[key];
-manifest.files[output + '.map'] = '/portfolio/static/js/' + output + '.map';
+manifest.files[output + '.map'] = './static/js/' + output + '.map';
 manifest.entrypoints = manifest.entrypoints.map(entry => /^static\/js\/main\./.test(entry) ? 'static/js/' + output : entry);
 for (const project of projects) {
   const asset = 'static/media/projects/' + project.image;
   if (!fs.existsSync(path.join(root, asset))) throw new Error('Screenshot missing: ' + asset);
-  manifest.files[asset] = '/portfolio/' + asset;
+  manifest.files[asset] = './' + asset;
 }
 fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 console.log(`Updated portfolio projects, French and English text, sector labels and image alternatives: ${output}`);

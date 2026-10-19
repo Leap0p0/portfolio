@@ -16,3 +16,5 @@ Le script part du bundle d’origine `static/js/main.5521f273.js`, applique uniq
 Les remplacements sont Alphanexia TV → HDR Peinture, Newsletter Médecins du Monde → Optidress et MyPatch → Théâtre des Arts Vivants. Lovely Colors et Fidelygo sont ajoutés à la suite. Smartkids est retiré sans remplacement ; la fiche BSLYK existante est conservée. La numérotation des 15 projets est continue. La landing page Médecins du Monde est conservée.
 
 Les fichiers à publier sont ceux de la racine du dépôt, y compris le nouveau bundle et `static/media/projects/`. Le dossier local `portfolio/` préexistant n’est pas la version modifiée.
+
+Pour ouvrir le portfolio en local, double-clique sur le fichier `index.html` à la racine du dépôt. Conserve le dossier `static` à côté : il contient les scripts, styles et images. Les chemins relatifs fonctionnent aussi sur GitHub Pages.
